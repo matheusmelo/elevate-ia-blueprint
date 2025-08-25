@@ -43,6 +43,25 @@ export const SlideBootcampBenchmark = () => {
     }
   ];
 
+  const benchmarks = [
+    {
+      category: "Bootcamps IA Brasil",
+      range: "R$ 18-72 mil",
+      originalRange: "US$ 3.500-14.000",
+      duration: "2-6 semanas",
+      format: "Online/Híbrido",
+      providers: ["DataCamp", "AgileFever", "Coursera"]
+    },
+    {
+      category: "Bootcamps Executivos",
+      range: "R$ 5-6 mil/pessoa",
+      originalRange: "US$ 1.000-1.250",
+      duration: "3-5 dias",
+      format: "Presencial/Online",
+      providers: ["Farotech", "MIT Executive", "Stanford"]
+    }
+  ];
+
   const ourProposal = {
     title: "Bootcamp IA In-Company",
     duration: "3 dias",
