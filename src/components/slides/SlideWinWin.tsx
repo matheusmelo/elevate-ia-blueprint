@@ -104,7 +104,7 @@ export const SlideWinWin = () => {
 
       {/* Success Metrics */}
       <div className="max-w-5xl mx-auto">
-        <Card className="p-8 bg-gradient-premium border-accent/20 hover-lift">
+        <Card className="p-8 bg-gray-900 border-accent/20 hover-lift">
           <div className="text-center space-y-6">
             <h2 className="text-2xl font-bold text-accent">Métricas de Sucesso Comprovadas</h2>
             

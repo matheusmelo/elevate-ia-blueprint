@@ -125,7 +125,7 @@ export const SlideThreePhases = () => {
 
       {/* Bootcamp as Leverage */}
       <div className="max-w-4xl mx-auto">
-        <Card className="p-8 bg-gradient-premium border-primary/20 hover-lift">
+        <Card className="p-8 bg-gray-900 border-primary/20 hover-lift">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
               <div className="flex items-center gap-3">

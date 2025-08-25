@@ -145,7 +145,7 @@ export const SlideROIProjection = () => {
 
       {/* ROI Summary */}
       <div className="max-w-4xl mx-auto">
-        <Card className="p-8 bg-gradient-premium border-accent/20 hover-lift">
+        <Card className="p-8 bg-gray-900 border-accent/20 hover-lift">
           <div className="text-center space-y-6">
             <h2 className="text-3xl font-bold text-accent">Resumo do ROI</h2>
             

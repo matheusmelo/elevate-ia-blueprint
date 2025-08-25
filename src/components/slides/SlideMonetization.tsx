@@ -120,7 +120,7 @@ export const SlideMonetization = () => {
 
       {/* Final CTA */}
       <div className="max-w-4xl mx-auto">
-        <Card className="p-8 bg-gradient-premium border-accent/20 hover-lift">
+        <Card className="p-8 bg-gray-900 border-accent/20 hover-lift">
           <div className="text-center space-y-4">
           <h2 className="text-3xl font-bold text-accent">Transformação Escalável</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">

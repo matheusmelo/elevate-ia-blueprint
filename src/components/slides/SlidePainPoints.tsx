@@ -109,7 +109,7 @@ export const SlidePainPoints = () => {
             ))}
             
             {/* The Paradox Highlight */}
-            <Card className="p-6 bg-gradient-premium border-accent/20 hover-lift">
+            <Card className="p-6 bg-gray-900 border-accent/20 hover-lift">
               <div className="text-center space-y-3">
                 <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto">
                   <AlertTriangle className="w-8 h-8 text-accent" />
