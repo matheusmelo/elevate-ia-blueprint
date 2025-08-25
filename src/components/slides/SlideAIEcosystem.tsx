@@ -1,35 +1,35 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Bot, Target, FileText, Calendar, TrendingUp } from "lucide-react";
+import { Bot, Target, FileText, Calendar, TrendingUp, MessageSquare, Sparkles, Zap } from "lucide-react";
 
 export const SlideAIEcosystem = () => {
-  const aiSolutions = [
+  const solutions = [
     {
-      area: "Aquisição",
-      solution: "Chatbot qualificador + lead scoring preditivo",
-      kpi: "Mais sessões estratégicas com leads qualificados",
-      icon: Target,
+      area: "Captação",
+      solution: "Agente SDR IA (WhatsApp + Site)",
+      benefit: "Pré-seleção de leads 24/7 integrada ao funil da Sessão Estratégica",
+      icon: MessageSquare,
       color: "primary"
     },
     {
-      area: "Entrega",
-      solution: "AI Coach (clone digital)",
-      kpi: "Assinaturas recorrentes, automação de entregas",
+      area: "Atendimento",
+      solution: "AI Coach (Gêmeo Digital de Zaccari)",
+      benefit: "Suporte 24/7 replicando sua metodologia para engenheiros",
       icon: Bot,
       color: "secondary"
     },
     {
       area: "Conteúdo",
-      solution: "Reutilização de conteúdo com IA",
-      kpi: "Mais alcance com menos esforço",
-      icon: FileText,
+      solution: "Agente de Conteúdo IA",
+      benefit: "Reaproveita lives em cápsulas para atrair gestores de obra",
+      icon: Sparkles,
       color: "accent"
     },
     {
-      area: "Back-office",
-      solution: "Automação de agendamento, faturas, onboarding",
-      kpi: "Horas poupadas por semana",
-      icon: Calendar,
+      area: "Propostas",
+      solution: "Automação de Propostas e Follow-up",
+      benefit: "Envio inteligente e rastreamento de engajamento",
+      icon: Zap,
       color: "primary"
     }
   ];
@@ -44,13 +44,13 @@ export const SlideAIEcosystem = () => {
         </div>
         
         <h1 className="text-display font-bold text-foreground">
-          O Ecossistema IA
+          Agentes de IA para Engenharia
           <br />
-          <span className="text-xl text-muted-foreground">Soluções Precisamente Mapeadas</span>
+          <span className="text-xl text-muted-foreground">Soluções Precisas para Cada Gap</span>
         </h1>
         
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-          Agentes de IA estrategicamente posicionados para resolver cada dor específica
+          Agentes de IA estrategicamente posicionados para resolver cada gap específico dos escritórios de engenharia
         </p>
       </div>
 
@@ -61,12 +61,12 @@ export const SlideAIEcosystem = () => {
           <div className="grid grid-cols-4 gap-4 text-center font-semibold text-sm uppercase tracking-wide text-muted-foreground mb-2">
             <div>Área</div>
             <div>Solução de IA</div>
-            <div>KPI Esperado</div>
+            <div>Benefício Esperado</div>
             <div>Impacto</div>
           </div>
           
           {/* Solution Rows */}
-          {aiSolutions.map((solution, index) => (
+          {solutions.map((solution, index) => (
             <Card key={index} className="p-6 bg-gradient-card border-primary/10 hover-lift">
               <div className="grid grid-cols-4 gap-4 items-center">
                 <div className="flex items-center gap-3">
@@ -78,7 +78,7 @@ export const SlideAIEcosystem = () => {
                 
                 <div className="text-muted-foreground">{solution.solution}</div>
                 
-                <div className="text-sm">{solution.kpi}</div>
+                <div className="text-sm">{solution.benefit}</div>
                 
                 <div className="flex justify-center">
                   <Badge className={`bg-${solution.color}/20 text-${solution.color} border-${solution.color}/20`}>
@@ -128,7 +128,7 @@ export const SlideAIEcosystem = () => {
       {/* Bottom CTA */}
       <div className="text-center space-y-2">
         <div className="text-lg font-semibold bg-gradient-hero bg-clip-text text-transparent">
-          Agora, como monetizar essa transformação?
+          Como escalar essa transformação para centenas de engenheiros?
         </div>
       </div>
     </div>

@@ -4,22 +4,42 @@ import { Button } from "@/components/ui/button";
 import { GraduationCap, Globe, Building, TrendingUp, Star, ExternalLink } from "lucide-react";
 
 export const SlideBootcampBenchmark = () => {
-  const benchmarks = [
+  const marketData = [
     {
-      category: "Bootcamps de IA no Brasil",
-      range: "R$ 18.000 - R$ 72.000",
-      originalRange: "US$ 3.500 - US$ 14.000",
-      providers: ["DataCamp", "AgileFever"],
-      duration: "6-12 meses",
-      format: "Online/Híbrido"
+      metric: "Setor de Engenharia",
+      value: "R$ 350 bilhões/ano",
+      description: "Movimentação anual no Brasil",
+      color: "primary"
     },
     {
-      category: "Bootcamp Executivo - Farotech",
-      range: "R$ 5.000 - R$ 6.000",
-      originalRange: "US$ 1.000 - US$ 1.250",
-      providers: ["Farotech"],
-      duration: "Intensivo",
-      format: "Para Executivos"
+      metric: "Dependência de Indicações",
+      value: "70% dos escritórios",
+      description: "Ainda operam sem automação comercial",
+      color: "secondary" 
+    },
+    {
+      metric: "Adoção de IA",
+      value: "< 10% do mercado",
+      description: "Enorme gap de competitividade",
+      color: "accent"
+    }
+  ];
+
+  const ozareGaps = [
+    {
+      current: "Triagem Manual",
+      problem: "Limita escala de atendimento",
+      solution: "SDR IA 24/7"
+    },
+    {
+      current: "Sessões Estratégicas",
+      problem: "Altamente eficazes, mas pouco automatizadas",
+      solution: "AI Coach escalável"
+    },
+    {
+      current: "Mentoria Individual",
+      problem: "Limitada pela disponibilidade pessoal",
+      solution: "Produtos digitais recorrentes"
     }
   ];
 
@@ -40,9 +60,9 @@ export const SlideBootcampBenchmark = () => {
         </div>
         
         <h1 className="text-display font-bold text-foreground">
-          Benchmark de Bootcamps
+          Mercado Inexplorado
           <br />
-          <span className="text-xl text-muted-foreground">Preços de Mercado 2024</span>
+          <span className="text-xl text-muted-foreground">Engenharia + IA no Brasil</span>
         </h1>
       </div>
 

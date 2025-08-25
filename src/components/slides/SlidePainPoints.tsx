@@ -3,24 +3,24 @@ import { Badge } from "@/components/ui/badge";
 import { AlertTriangle, Clock, Users, TrendingDown, User, Scale } from "lucide-react";
 
 export const SlidePainPoints = () => {
-  const pmeProblems = [
+  const engineerProblems = [
     {
       icon: Clock,
-      title: "Sobrecarga Operacional",
-      description: "Gestores perdidos em tarefas administrativas, sem tempo para estratégia",
-      impact: "Crescimento estagnado"
+      title: "Engenheiros Atolados no Operacional",
+      description: "Profissionais técnicos perdidos em tarefas administrativas, sem tempo para gestão estratégica",
+      impact: "Crescimento limitado"
     },
     {
       icon: Users,
-      title: "Dependência de Indicações",
-      description: "Vendas dependem apenas do networking, sem sistema previsível",
-      impact: "Receita instável"
+      title: "Dependência Exclusiva de Indicações",
+      description: "Escritórios que faturam apenas por networking, sem previsibilidade comercial",
+      impact: "Faturamento instável"
     },
     {
       icon: TrendingDown,
-      title: "Lacuna de Gestão Estratégica",
-      description: "Falta visão sistêmica para otimizar processos e resultados",
-      impact: "Oportunidades perdidas"
+      title: "Falta de Processos Comerciais",
+      description: "Ausência de qualificação de leads e propostas enviadas manualmente",
+      impact: "Conversões baixas"
     }
   ];
 
@@ -49,9 +49,9 @@ export const SlidePainPoints = () => {
         </div>
         
         <h1 className="text-display font-bold text-foreground">
-          Dores Crônicas das PMEs
+          Gaps dos Escritórios de Engenharia
           <br />
-          <span className="text-xl text-muted-foreground">+ Obstáculos do Consultor</span>
+          <span className="text-xl text-muted-foreground">+ Limitações da Consultoria Atual</span>
         </h1>
       </div>
 
@@ -59,12 +59,12 @@ export const SlidePainPoints = () => {
         {/* PME Problems */}
         <div className="space-y-6">
           <div className="text-center">
-            <h2 className="text-2xl font-bold text-primary mb-2">Dores das PMEs</h2>
-            <p className="text-muted-foreground">Problemas que impedem o crescimento</p>
+            <h2 className="text-2xl font-bold text-primary mb-2">Dores dos Engenheiros</h2>
+            <p className="text-muted-foreground">Problemas que limitam escritórios de engenharia</p>
           </div>
           
           <div className="space-y-4">
-            {pmeProblems.map((problem, index) => (
+            {engineerProblems.map((problem, index) => (
               <Card key={index} className="p-6 bg-gradient-card border-destructive/10 hover-lift">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-destructive/20 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -127,10 +127,10 @@ export const SlidePainPoints = () => {
       {/* Bottom CTA */}
       <div className="text-center space-y-4">
         <div className="text-lg font-semibold text-accent">
-          Como a IA resolve esses problemas sistêmicos?
+          Como Agentes de IA resolvem esses gaps da engenharia?
         </div>
         <div className="text-muted-foreground">
-          A solução está na próxima etapa →
+          Soluções práticas na próxima etapa →
         </div>
       </div>
     </div>

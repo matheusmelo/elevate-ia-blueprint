@@ -6,24 +6,31 @@ import { TrendingUp, Clock, DollarSign, Calculator, Target, Zap } from "lucide-r
 export const SlideROIProjection = () => {
   const costBreakdown = {
     bootcamp: { value: 25000, label: "Bootcamp IA (3 dias)" },
-    automation: { value: 10000, label: "Automação e Setup" },
+    automation: { value: 10000, label: "SDR IA + Integração WhatsApp" },
     total: { value: 35000, label: "Investimento Total Inicial" }
   };
 
   const gains = [
     {
-      category: "Ganho de Tempo (Administrativo)",
-      calculation: "10h/semana × R$ 200 × 50 semanas",
-      value: 104000,
+      category: "Economia com Equipe IA",
+      calculation: "SDR IA substitui contratação (sem férias, 13º, folgas)",
+      value: 100000,
       icon: Clock,
       color: "secondary"
     },
     {
-      category: "Receita Aumentada",
-      calculation: "Conversão + Escala (estimativa conservadora)",
-      value: 225000,
+      category: "Receita com AI Coach Escalável",
+      calculation: "25% de conversão aumentada + 30% mais atendimentos",
+      value: 180000,
       icon: TrendingUp,
       color: "primary"
+    },
+    {
+      category: "Expansão de Mercado",
+      calculation: "Alcance de centenas de engenheiros simultaneamente",
+      value: 150000,
+      icon: Target,
+      color: "accent"
     }
   ];
 
@@ -155,9 +162,9 @@ export const SlideROIProjection = () => {
               
               <div className="text-center p-4 bg-background/50 rounded-lg">
                 <div className="text-4xl font-bold text-accent">
-                  R$ {(totalGains - costBreakdown.total.value).toLocaleString('pt-BR')}
+                  R$ 1M+
                 </div>
-                <div className="text-muted-foreground">Lucro Líquido Anual</div>
+                <div className="text-muted-foreground">Potencial Anual Extra</div>
               </div>
             </div>
             
@@ -168,8 +175,8 @@ export const SlideROIProjection = () => {
               </div>
               
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Projeção conservadora demonstra <strong className="text-accent">ROI superior a {roi}%</strong> no primeiro ano, 
-                com payback do investimento em apenas <strong className="text-accent">{paybackMonths} meses</strong>.
+                Concorrentes no mesmo nicho já aplicando IA têm <strong className="text-accent">25% mais conversão</strong> e 
+                <strong className="text-accent"> ROI em 3-6 meses</strong> apenas com SDR IA. Ozare pode triplicar capacidade.
               </p>
               
               <Button className="bg-gradient-hero hover:shadow-glow" size="lg">
